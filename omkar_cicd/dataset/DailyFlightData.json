@@ -1,0 +1,45 @@
+{
+	"name": "DailyFlightData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "flights.csv",
+				"folderPath": "landingzone",
+				"fileSystem": "airlineflightdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Carrier",
+				"type": "String"
+			},
+			{
+				"name": "OriginAirportID",
+				"type": "String"
+			},
+			{
+				"name": "DestAirportID",
+				"type": "String"
+			},
+			{
+				"name": "DepDelay",
+				"type": "String"
+			},
+			{
+				"name": "ArrDelay",
+				"type": "String"
+			}
+		]
+	}
+}

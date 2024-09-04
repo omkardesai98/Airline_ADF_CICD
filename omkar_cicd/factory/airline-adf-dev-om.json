@@ -1,0 +1,9 @@
+{
+	"name": "airline-adf-dev-om",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "27ab9217-bcd7-431c-ab51-31a22a311ff0",
+		"tenantId": "4b44e08e-f909-46b2-b094-62bd5bedf7fa"
+	}
+}
